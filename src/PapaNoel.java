@@ -6,8 +6,8 @@ public class PapaNoel {
     public static void main(String[] args) {
         List<Integer> portales = new ArrayList<>();
         portales.add(2);
-        portales.add(5);
-        portales.add(1);
+        portales.add(4);
+        portales.add(7);
         System.out.println(visita(3,portales));
     }
 
@@ -16,17 +16,31 @@ public class PapaNoel {
         int aux = Integer.MAX_VALUE;
         int distancia = 0;
         int portal = 0;
+        int compara = 0;
         while(!portales.isEmpty()) {
+            aux = Integer.MAX_VALUE;
             for (int i = 0; i < portales.size(); i++) {
                 distancia = Math.abs(portales.get(i) - aterriza);
+                if(aux == distancia){
+                    if(portales.get(i) > portales.get(compara)){
+                        portal = i;
+                        aux = distancia;
+                        compara = portal;
+                    }else{
+                        portal = compara;
+                        aux = distancia;
+                        compara = portales.get(portal);
+                    }
+                }
                 if(aux > distancia){
                     portal = i;
                     aux = distancia;
+                    compara = portal;
                 }else if(portales.size()==1){
                     portal = i;
                 }
             }
-            aterriza = portal;
+            aterriza = portales.get(portal);
             resultado += portales.get(portal)+" ";
             portales.remove(portal);
         }
