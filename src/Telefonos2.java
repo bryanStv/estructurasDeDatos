@@ -2,9 +2,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class Telefonos {
+public class Telefonos2 {
     public static void main(String[] args) {
-        Map<String,Integer> telefonos = new HashMap<>();
+        Map<String, Integer> telefonos = new HashMap<>();
         telefonos.put("Pepito",123456789);
         telefonos.put("Jaimito",987654321);
         telefonos.put("Empresaurio",123789456);

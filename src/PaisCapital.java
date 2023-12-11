@@ -13,5 +13,6 @@ public class PaisCapital {
         System.out.print("Dime un país: ");
         String pais = tc.next();
         System.out.println(paises.getOrDefault(pais,"No se ha encontrado ese país en la lista."));
+        tc.close();
     }
 }
