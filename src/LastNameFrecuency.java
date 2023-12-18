@@ -7,7 +7,7 @@ import java.util.Map;
 public class LastNameFrecuency {
     public static void main(String[] args) {
         try {
-            BufferedReader reader = new BufferedReader(new FileReader("archivos/LastnameFrecuencies.csv"));
+            BufferedReader reader = new BufferedReader(new FileReader("archivos/LastnameFrequencies.csv"));
             String datos, Napellidos,apellidos, numeros;
             Integer numero = 0;
 
@@ -18,9 +18,9 @@ public class LastNameFrecuency {
             while ((datos = reader.readLine())!=null) { //leyendo palabras
                 tabla = datos.split(",");
                 Napellidos = tabla[1];
-                Napellidos.replaceAll("\\.","");
-
-                if(numero == null){
+                Napellidos.replaceAll("\\.", "");
+                System.out.println(Napellidos);
+                /*if(numero == null){
                     paises.put(Napellidos, 1);
                 }else{
                     paises.put(Napellidos,numero+1);
@@ -34,6 +34,9 @@ public class LastNameFrecuency {
             for (String claves: paises.keySet()) {
                 numero = paises.get(claves);
                 System.out.println(claves+" --> "+numero+" alumnos");
+            }
+
+                 */
             }
         }catch (IOException e){
             System.out.println("El fichero no existe.");

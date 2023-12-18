@@ -9,7 +9,6 @@ public class Botin {
     public static String repartir(int participantes,Integer ...billetes){
         Map<Integer,String> botin = new HashMap<>();
         List<Integer> l = new ArrayList<>(Arrays.asList(billetes));
-        String resultado = "";
         System.out.println(Arrays.toString(billetes));
         Collections.shuffle(l);
         System.out.println(l.toString());
