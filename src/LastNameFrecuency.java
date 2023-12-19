@@ -4,6 +4,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 
 public class LastNameFrecuency {
     public static void main(String[] args) {
@@ -13,8 +14,8 @@ public class LastNameFrecuency {
 
             String[] tabla;
             Map<String, String> paises = new HashMap<>();
+            Scanner tc = new Scanner(System.in);
 
-            reader.readLine();
             while ((datos = reader.readLine())!=null) { //leyendo palabras
                 tabla = datos.split(",");
                 if(tabla.length == 2) {
@@ -29,10 +30,15 @@ public class LastNameFrecuency {
             }
 
             reader.close();
-            for (String claves: paises.keySet()) {
+            /*for (String claves: paises.keySet()) {
                 numeros = paises.get(claves);
                 System.out.println(claves+" --> "+numeros);
-            }
+            }*/
+
+            String clave = tc.next();
+            System.out.println(paises.get(clave));
+            tc.close();
+
         }catch (IOException e){
             System.out.println("El fichero no existe.");
         }
