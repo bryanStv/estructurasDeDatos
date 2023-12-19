@@ -35,9 +35,15 @@ public class LastNameFrecuency {
                 System.out.println(claves+" --> "+numeros);
             }*/
 
-            String clave = tc.next();
-            System.out.println(paises.get(clave));
-            tc.close();
+            while(true){
+                System.out.print("Dime un apellido: ");
+                String clave = tc.nextLine();
+                if(clave.equals("")){
+                    tc.close();
+                    System.exit(0);
+                }
+                System.out.println(paises.get(clave));
+            }
 
         }catch (IOException e){
             System.out.println("El fichero no existe.");
