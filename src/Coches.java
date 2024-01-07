@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class Coches {
     public static void main(String[] args) {
+        //OK
         ArrayList<String> coches = new ArrayList<>();
         Scanner tc = new Scanner(System.in);
         String coche = "";

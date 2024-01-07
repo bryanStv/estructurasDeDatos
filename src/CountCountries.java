@@ -7,6 +7,7 @@ import java.util.Map;
 
 public class CountCountries {
     public static void main(String[] args) {
+        //OK
         try {
             BufferedReader reader = new BufferedReader(new FileReader("archivos/Colfuturo-Seleccionados.csv"));
             String datos, pais;

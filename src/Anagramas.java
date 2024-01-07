@@ -8,6 +8,7 @@ import java.util.Map;
 
 public class Anagramas {
     public static void main(String[] args){
+        //OK
         try {
             BufferedReader reader = new BufferedReader(new FileReader("archivos/1.txt"));
             String palabra,alfabetica = "";

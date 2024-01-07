@@ -3,6 +3,7 @@ import java.util.*;
 //ft Adrián
 public class PapaNoel {
     public static void main(String[] args) {
+        //OK
         List<Integer> portales = new ArrayList<>();
         portales.add(2);
         portales.add(4);

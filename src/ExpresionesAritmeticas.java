@@ -2,6 +2,7 @@ import java.util.Stack;
 
 public class ExpresionesAritmeticas {
     public static void main(String[] args) {
+        //OK
         Stack<Integer> datos = new Stack<>();
         String valores = "5 1 2 + 4 * + 3 -"; //14
         char dato;
