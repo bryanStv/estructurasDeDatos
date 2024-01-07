@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class Altura {
     public static void main(String[] args) {
+        //Ok
         ArrayList<Integer> alturas = new ArrayList<>();
         int numero = numeroAlumnos();
         leerAlturas(alturas,numero);

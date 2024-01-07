@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class PaisCapital {
     public static void main(String[] args) {
+        //Ok
         Map<String, String> paises = new HashMap<>();
         paises.put("España","Madrid");
         paises.put("Francia","París");

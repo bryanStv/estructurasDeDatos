@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 public class LastNameFrecuency {
     public static void main(String[] args) {
+        //OK
         try {
             BufferedReader reader = new BufferedReader(new FileReader("archivos/LastnameFrequencies.csv"));
             String datos, Napellidos,apellidos, numeros;

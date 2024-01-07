@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class Frecuencia {
     public static void main(String[] args) {
+        //Ok
         Scanner tc = new Scanner(System.in);
         String numeros;
 

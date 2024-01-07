@@ -3,6 +3,7 @@ import java.util.Stack;
 
 public class Parentesis {
     public static void main(String[] args) {
+        //OK
         String parentesis = "{([])}[{}]{}";
         try {
             Stack<Character> pila = new Stack<>();
@@ -42,14 +43,18 @@ public class Parentesis {
     public static boolean comprobacion(char palabra, char palabraPila,Stack<Character> pila) throws EmptyStackException{
         palabraPila = pila.peek();
         if(palabra == ')'){
-            if(palabraPila == '(') return true;
-            else return false;
+            // if(palabraPila == '(') return true;
+            // else return false;
+            return palabraPila == '(';
         }else if(palabra == ']'){
-            if(palabraPila == '[') return true;
-            else return false;
+            // if(palabraPila == '[') return true;
+            // else return false;
+            return palabraPila == '[';
         }else if(palabra == '}'){
-            if(palabraPila == '{') return true;
-            else return false;
+            // if(palabraPila == '{') return true;
+            // else return false;
+            return palabraPila == '{';
+
         }else return false;
     }
 }
